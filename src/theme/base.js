@@ -20,4 +20,18 @@ export const Base = createGlobalStyle`
     font-weight: 300;
     line-height: 1.6;
   }
+
+  .mb-sm {
+    margin-bottom: 2rem;
+  }
+  .mb-md {
+    margin-bottom: 3rem;
+  }
+  .mb-lg {
+    margin-bottom: 4rem;
+  }
+  .mb-hg {
+    margin-bottom: 8rem;
+  }
+  
 `;
