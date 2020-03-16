@@ -10,6 +10,12 @@ export const Story = props => {
   );
 };
 
-const Pictures = styled.div``;
+const Pictures = styled.div`
+  background-color: ${props => props.theme.colorPrimary};
+  grid-column: full-start / col-end 4;
+`;
 
-const Content = styled.div``;
+const Content = styled.div`
+  background-color: ${props => props.theme.colorGreyLight1};
+  grid-column: col-start 5 / full-end;
+`;
