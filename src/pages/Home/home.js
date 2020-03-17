@@ -12,7 +12,7 @@ export const Home = () => {
       <Realtors>Top 3 realtors</Realtors>
       <Features />
       <Story />
-      <Homes>Homes</Homes>
+      <Homes />
       <Gallery>Gallery</Gallery>
     </>
   );

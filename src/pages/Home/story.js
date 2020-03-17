@@ -5,7 +5,7 @@ import image1 from "../../img/story-1.jpeg";
 import image2 from "../../img/story-2.jpeg";
 import background from "../../img/back.jpg";
 
-import { Heading2, Heading3 } from "../../theme";
+import { Heading2, Heading3, Button } from "../../theme";
 export const Story = props => {
   return (
     <>
@@ -73,21 +73,4 @@ const StoryText = styled.p`
   font-size: 1.5rem;
   font-style: italic;
   margin-bottom: 4rem;
-`;
-
-const Button = styled.button`
-  background-color: ${props => props.theme.colorPrimary};
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  font-family: ${props => props.theme.fontDisplay};
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  padding: 1.8rem 3rem;
-  cursor: pointer;
-  transition: all 0.2s;
-
-  &:hover {
-    background-color: ${props => props.theme.colorPrimaryDark};
-  }
 `;

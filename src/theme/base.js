@@ -33,5 +33,8 @@ export const Base = createGlobalStyle`
   .mb-hg {
     margin-bottom: 8rem;
   }
-  
+
+  .mt {
+    margin-top: 2.5rem;
+  }
 `;
