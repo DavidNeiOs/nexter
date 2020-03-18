@@ -7,6 +7,9 @@ const HeadingMixing = css`
 
 export const Heading1 = styled.h1`
   ${HeadingMixing}
+  font-size: 4.5rem;
+  color: ${props => props.theme.colorGreyLight1};
+  line-height: 1;
 `;
 export const Heading2 = styled.h2`
   ${HeadingMixing}

@@ -9,10 +9,10 @@ function App() {
     <ThemeProvider theme={theme}>
       <Base />
       <Container>
-        <Sidebar>Sidebar</Sidebar>
+        <Sidebar />
         <Header>Header</Header>
         <Home />
-        <Footer>Footer</Footer>
+        <Footer />
       </Container>
     </ThemeProvider>
   );
