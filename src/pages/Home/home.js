@@ -13,7 +13,7 @@ export const Home = () => {
       <Features />
       <Story />
       <Homes />
-      <Gallery>Gallery</Gallery>
+      <Gallery />
     </>
   );
 };
