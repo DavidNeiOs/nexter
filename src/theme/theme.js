@@ -1,3 +1,4 @@
+import media from "./media";
 export const theme = {
   colorPrimary: "#c69963",
   colorPrimaryDark: "#B28451",
@@ -9,5 +10,6 @@ export const theme = {
   fontPrimary: `'Nunito', sans-serif`,
   fontDisplay: `'Josefin Sans', sans-serif`,
   boxShadow1: `0 2rem 5rem rgba(0, 0, 0, .1)`,
-  boxShadow2: `0 2rem 5rem rgba(0, 0, 0, .2)`
+  boxShadow2: `0 2rem 5rem rgba(0, 0, 0, .2)`,
+  ...media
 };

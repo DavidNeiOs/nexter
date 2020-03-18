@@ -36,11 +36,17 @@ const Pictures = styled.div`
     ),
     url(${background});
   grid-column: full-start / col-end 4;
+  background-size: cover;
 
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   align-items: center;
+
+  ${({ theme }) => theme.bpMedium`
+    grid-column: 1 / -1;
+    padding: 3rem;
+  `}
 `;
 
 const Image1 = styled.img`
@@ -48,6 +54,10 @@ const Image1 = styled.img`
   grid-row: 2 / 6;
   grid-column: 2 / 6;
   box-shadow: ${props => props.theme.boxShadow1};
+  ${({ theme }) => theme.bpMedium`
+    grid-column: 1 / 5;
+    grid-row: 1 / -1;
+  `}
 `;
 
 const Image2 = styled.img`
@@ -56,6 +66,10 @@ const Image2 = styled.img`
   grid-column: 4/ 7;
   z-index: 20;
   box-shadow: ${props => props.theme.boxShadow2};
+  ${({ theme }) => theme.bpMedium`
+    grid-row: 1 / -1;
+    width: 100%;
+  `}
 `;
 
 const Content = styled.div`
@@ -67,6 +81,11 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
+  ${({ theme }) => theme.bpMedium`
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+  `}
 `;
 
 const StoryText = styled.p`

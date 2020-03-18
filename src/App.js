@@ -5,6 +5,7 @@ import { Container, Sidebar, Header, Footer } from "./layout";
 import { Home } from "./pages/Home";
 
 function App() {
+  console.log(theme);
   return (
     <ThemeProvider theme={theme}>
       <Base />

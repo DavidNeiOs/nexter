@@ -16,6 +16,13 @@ export const Container = styled.div`
 
   display: flex;
   justify-content: center;
+
+  ${({ theme }) => theme.bpLarge`
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-content: flex-end;
+    align-items: center;  
+  `}
 `;
 
 const Button = styled.button`
@@ -44,4 +51,17 @@ const Button = styled.button`
   &::after {
     transform: translateY(1.3rem);
   }
+
+  ${({ theme }) => theme.bpLarge`
+    margin-top: 0;
+    margin-right: 3rem;
+
+    &::before {
+      transform: translateY(-1.2rem);
+    }
+
+    &::after {
+      transform: translateY(1.0rem);
+    }
+  `}
 `;

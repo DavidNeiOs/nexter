@@ -42,10 +42,18 @@ const Container = styled.header`
   padding-top: 4rem;
 
   display: grid;
-  grid-template-rows: 1fr min-content 6rem 1fr;
-  grid-template-columns: max-content;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
   grid-row-gap: 1.5rem;
   justify-content: center;
+
+  ${({ theme }) => theme.bpMedium`
+    grid-column: 1 / -1;
+  `}
+
+  ${({ theme }) => theme.bpSmall`
+    padding: 5rem;
+  `}
 `;
 
 const Logo = styled.img`
@@ -81,9 +89,11 @@ const LogosContainer = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 3rem;
   justify-items: center;
+  align-items: center;
 `;
 
 const CompanyLogo = styled.img`
-  height: 25px;
+  max-height: 25px;
+  max-width: 100%;
   filter: brightness(70%);
 `;

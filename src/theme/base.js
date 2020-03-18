@@ -4,6 +4,10 @@ export const Base = createGlobalStyle`
   html {
     box-sizing: border-box;
     font-size: 62.5%; /* 10px/16px: 62.5% */
+
+    ${({ theme }) => theme.bpLargest`
+      font-size: 50%;
+    `}
   }
 
   *,
